@@ -12,6 +12,8 @@ Do not change the project structure without an explicit user command.
 
 `Maverick_KB/` is a local Obsidian vault. It must not be committed to GitHub at this stage.
 
+`Maverick_KB/raw_normalized/` is generated locally from inbox materials and must not be committed to GitHub.
+
 GitHub currently stores only the project scaffold, scripts placeholders, documentation, and repository rules:
 
 - `README.md`
