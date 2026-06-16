@@ -2,9 +2,9 @@
 
 This directory contains local processing scripts for CL Maverick KB.
 
-## Inbox Processing v0.1
+## Inbox Processing
 
-`process_inbox.py` reads local source files from `inbox/` and writes normalized markdown files to `Maverick_KB/raw_normalized/`.
+`process_inbox.py` reads local source files from `inbox/_new/` and writes normalized markdown files to `Maverick_KB/raw_normalized/`.
 
 Supported formats:
 
@@ -13,19 +13,26 @@ Supported formats:
 - `.docx`
 - `.pdf`
 
-The processor does not delete source files from `inbox/` and does not create wiki pages.
+The processor does not create wiki pages.
+
+After processing, original files are moved:
+
+- success: `inbox/_processed/`
+- error or unsupported format: `inbox/_failed/`
+
+If a target folder already contains a file with the same name, the processor appends a timestamp to avoid overwriting it.
 
 ## Add Source Files
 
 Place source files in:
 
 ```powershell
-inbox/
+inbox\_new\
 ```
 
-Files in `inbox/` are local-only, except `inbox/README.md`.
+Files in `inbox/_new/`, `inbox/_processed/`, and `inbox/_failed/` are local-only.
 
-The tracked placeholder `inbox/README.md` is ignored by the processor.
+The processor no longer reads files directly from `inbox/`.
 
 ## Install Dependencies
 
@@ -59,3 +66,5 @@ Processing history is appended to:
 ```powershell
 Maverick_KB/PROCESSING_LOG.md
 ```
+
+The log records the original path, raw normalized path, moved original path, status, and error text when applicable.

@@ -7,6 +7,12 @@ Thumbs.db
 
 inbox/*
 !inbox/README.md
+!inbox/_new/
+!inbox/_processed/
+!inbox/_failed/
+inbox/_new/*
+inbox/_processed/*
+inbox/_failed/*
 
 exports/*
 !exports/README.md
