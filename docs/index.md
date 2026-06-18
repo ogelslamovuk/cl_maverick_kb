@@ -15,6 +15,7 @@ hide:
   <div class="kb-actions">
     <a href="Продажа%20билетов/" class="kb-button kb-button--primary">Продажа билетов</a>
     <a href="Waiter/" class="kb-button">Waiter</a>
+    <a href="Виджет/" class="kb-button">Виджет</a>
     <a href="Сертификаты/" class="kb-button">Сертификаты</a>
   </div>
 </div>
@@ -33,6 +34,13 @@ hide:
 Работа официанта, администратора и настройка меню/цехов.
 
 [Открыть раздел](Waiter.md)
+</div>
+
+<div class="kb-card" markdown>
+### Виджет
+Встраиваемый виджет продажи билетов для партнёрских сайтов и приложений.
+
+[Открыть раздел](Виджет.md)
 </div>
 
 <div class="kb-card" markdown>
