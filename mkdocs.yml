@@ -1,59 +1,72 @@
 site_name: CL Maverick KB
 site_description: База знаний CL Maverick — инструкции и документация
 site_url: https://ogelslamovuk.github.io/cl_maverick_kb/
+repo_url: https://github.com/ogelslamovuk/cl_maverick_kb
+repo_name: ogelslamovuk/cl_maverick_kb
+
 theme:
   name: material
-  palette:
-  - scheme: default
-    primary: indigo
-    accent: indigo
   language: ru
+  logo: assets/brand/maverick_logo_reversed.png
+  favicon: assets/brand/cinemalab_logo.jpg
+  palette:
+    - scheme: default
+      primary: black
+      accent: amber
   features:
-  - navigation.sections
-  - navigation.expand
-  - navigation.top
-  - search.suggest
-  - search.highlight
-  - content.tabs.link
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.copy
+
 plugins:
-- search
+  - search
+
 markdown_extensions:
-- toc
-- tables
-- fenced_code
-- admonition
-- attr_list
-- md_in_html
-- pymdownx.superfences
-- pymdownx.tabbed
-- pymdownx.details
+  - toc
+  - tables
+  - fenced_code
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.details
+
+extra_css:
+  - stylesheets/extra.css
+
 nav:
-- Seller: Seller.md
-- Waiter: Waiter.md
-- Афиша и витрина: Афиша и витрина.md
-- Киоск: Киоск.md
-- Прайсы и налоги: Прайсы и налоги.md
-- Продажа билетов: Продажа билетов.md
-- Расписание и события: Расписание и события.md
-- Сертификаты: Сертификаты.md
-- Технический setup: Технический setup.md
-- Seller:
-  - Базовая работа в Seller Web: Seller/Базовая работа в Seller Web.md
-- SupportBot:
-  - Как пользоваться SupportBot: SupportBot/Как пользоваться SupportBot.md
-- Waiter:
-  - Настройка меню и цехов в Manager для Waiter: Waiter/Настройка меню и цехов в Manager
-      для Waiter.md
-  - Работа администратора в Waiter: Waiter/Работа администратора в Waiter.md
-  - Работа официанта в Waiter: Waiter/Работа официанта в Waiter.md
-- Афиша и витрина:
-  - Сортировка афиши: Афиша и витрина/Сортировка афиши.md
-- Киоск:
-  - Запуск киоска: Киоск/Запуск киоска.md
-- Прайсы и налоги:
-  - Заполнение прайса с НДС: Прайсы и налоги/Заполнение прайса с НДС.md
-- Продажа билетов:
-  - Базовая работа в Seller Web: Продажа билетов/Базовая работа в Seller Web.md
-- Сертификаты:
-  - Активация сертификатов через Portal: Сертификаты/Активация сертификатов через
-      Portal.md
+  - Главная: index.md
+  - Продажа билетов:
+      - Обзор: Продажа билетов.md
+      - Базовая работа в Seller Web: Продажа билетов/Базовая работа в Seller Web.md
+  - Seller:
+      - Обзор: Seller.md
+      - Базовая работа в Seller Web: Seller/Базовая работа в Seller Web.md
+  - Waiter:
+      - Обзор: Waiter.md
+      - Работа официанта: Waiter/Работа официанта в Waiter.md
+      - Работа администратора: Waiter/Работа администратора в Waiter.md
+      - Настройка меню и цехов: Waiter/Настройка меню и цехов в Manager для Waiter.md
+  - Сертификаты:
+      - Обзор: Сертификаты.md
+      - Активация через Portal: Сертификаты/Активация сертификатов через Portal.md
+  - Киоск:
+      - Обзор: Киоск.md
+      - Запуск киоска: Киоск/Запуск киоска.md
+  - Афиша и витрина:
+      - Обзор: Афиша и витрина.md
+      - Сортировка афиши: Афиша и витрина/Сортировка афиши.md
+  - Прайсы и налоги:
+      - Обзор: Прайсы и налоги.md
+      - Заполнение прайса с НДС: Прайсы и налоги/Заполнение прайса с НДС.md
+  - Расписание и события: Расписание и события.md
+  - Технический setup: Технический setup.md
+  - SupportBot:
+      - Как пользоваться SupportBot: SupportBot/Как пользоваться SupportBot.md

@@ -1,6 +1,7 @@
 .venv/
 __pycache__/
 *.pyc
+site/
 .env
 .DS_Store
 Thumbs.db
