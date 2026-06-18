@@ -1,0 +1,59 @@
+site_name: CL Maverick KB
+site_description: База знаний CL Maverick — инструкции и документация
+site_url: https://ogelslamovuk.github.io/cl_maverick_kb/
+theme:
+  name: material
+  palette:
+  - scheme: default
+    primary: indigo
+    accent: indigo
+  language: ru
+  features:
+  - navigation.sections
+  - navigation.expand
+  - navigation.top
+  - search.suggest
+  - search.highlight
+  - content.tabs.link
+plugins:
+- search
+markdown_extensions:
+- toc
+- tables
+- fenced_code
+- admonition
+- attr_list
+- md_in_html
+- pymdownx.superfences
+- pymdownx.tabbed
+- pymdownx.details
+nav:
+- Seller: Seller.md
+- Waiter: Waiter.md
+- Афиша и витрина: Афиша и витрина.md
+- Киоск: Киоск.md
+- Прайсы и налоги: Прайсы и налоги.md
+- Продажа билетов: Продажа билетов.md
+- Расписание и события: Расписание и события.md
+- Сертификаты: Сертификаты.md
+- Технический setup: Технический setup.md
+- Seller:
+  - Базовая работа в Seller Web: Seller/Базовая работа в Seller Web.md
+- SupportBot:
+  - Как пользоваться SupportBot: SupportBot/Как пользоваться SupportBot.md
+- Waiter:
+  - Настройка меню и цехов в Manager для Waiter: Waiter/Настройка меню и цехов в Manager
+      для Waiter.md
+  - Работа администратора в Waiter: Waiter/Работа администратора в Waiter.md
+  - Работа официанта в Waiter: Waiter/Работа официанта в Waiter.md
+- Афиша и витрина:
+  - Сортировка афиши: Афиша и витрина/Сортировка афиши.md
+- Киоск:
+  - Запуск киоска: Киоск/Запуск киоска.md
+- Прайсы и налоги:
+  - Заполнение прайса с НДС: Прайсы и налоги/Заполнение прайса с НДС.md
+- Продажа билетов:
+  - Базовая работа в Seller Web: Продажа билетов/Базовая работа в Seller Web.md
+- Сертификаты:
+  - Активация сертификатов через Portal: Сертификаты/Активация сертификатов через
+      Portal.md
