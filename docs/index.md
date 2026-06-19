@@ -9,7 +9,7 @@ hide:
     <span>CinemaLab · Maverick</span>
   </div>
   <h1>База знаний Maverick</h1>
-  <p class="kb-home-lead">Быстрый вход в рабочие инструкции: касса, виджет, Waiter, киоск, сертификаты, афиша и настройки.</p>
+  <p class="kb-home-lead">Быстрый вход в рабочие инструкции: Manager/back-office, касса, виджет, Waiter, киоск, сертификаты, афиша и настройки.</p>
   <div class="kb-home-actions">
     <a href="Как%20пользоваться%20базой%20знаний/" class="kb-button kb-button--primary">Как искать инструкцию</a>
     <a href="#popular" class="kb-button">Популярные задачи</a>
@@ -79,6 +79,13 @@ hide:
 Продажа билетов, товары, комбо, сертификаты, Seller Web и виджет.
 
 [Перейти](Продажа%20билетов.md)
+</div>
+
+<div class="kb-section-card" markdown>
+### Manager / back-office
+Справочники, категории, списки, сертификаты, прайсы и настройки, которые влияют на кассу, сайт и Waiter.
+
+[Перейти](Manager.md)
 </div>
 
 <div class="kb-section-card" markdown>
