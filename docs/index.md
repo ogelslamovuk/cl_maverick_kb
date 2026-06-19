@@ -3,72 +3,120 @@ hide:
   - toc
 ---
 
-<div class="kb-hero">
-  <div class="kb-hero__logos">
-    <img src="assets/brand/cinemalab_logo.jpg" alt="CinemaLab" class="kb-logo kb-logo--cinemalab">
-    <span class="kb-hero__divider"></span>
-    <img src="assets/brand/maverick_logo.png" alt="Maverick" class="kb-logo kb-logo--maverick">
+<div class="kb-home-hero">
+  <div class="kb-brandline">
+    <img src="assets/brand/cinemalab_logo.jpg" alt="CinemaLab" class="kb-brandline__mark">
+    <span>CinemaLab · Maverick</span>
   </div>
-  <p class="kb-eyebrow">CinemaLab · Maverick ecosystem</p>
   <h1>База знаний Maverick</h1>
-  <p class="kb-lead">Рабочие инструкции, сценарии и справочные материалы по продуктам экосистемы Maverick.</p>
-  <div class="kb-actions">
-    <a href="Продажа%20билетов/" class="kb-button kb-button--primary">Продажа билетов</a>
-    <a href="Waiter/" class="kb-button">Waiter</a>
-    <a href="Виджет/" class="kb-button">Виджет</a>
-    <a href="Сертификаты/" class="kb-button">Сертификаты</a>
+  <p class="kb-home-lead">Быстрый вход в рабочие инструкции: касса, виджет, Waiter, киоск, сертификаты, афиша и настройки.</p>
+  <div class="kb-home-actions">
+    <a href="Как%20пользоваться%20базой%20знаний/" class="kb-button kb-button--primary">Как искать инструкцию</a>
+    <a href="#popular" class="kb-button">Популярные задачи</a>
   </div>
 </div>
 
-<div class="kb-grid" markdown>
+## Мне нужно… {#popular}
 
-<div class="kb-card" markdown>
-### Продажа билетов
-Базовые сценарии продажи билетов, товаров, комбо и сертификатов.
+<div class="kb-task-grid" markdown>
 
-[Открыть раздел](Продажа%20билетов.md)
+<div class="kb-task-card" markdown>
+<span class="kb-badge">касса</span>
+### Продать билет или товар
+Базовый сценарий работы в Seller Web: выбор события, мест, товаров, оплата и чек.
+
+[Открыть инструкцию](Продажа%20билетов/Базовая%20работа%20в%20Seller%20Web.md)
 </div>
 
-<div class="kb-card" markdown>
-### Waiter
-Работа официанта, администратора и настройка меню/цехов.
+<div class="kb-task-card" markdown>
+<span class="kb-badge">сертификаты</span>
+### Активировать сертификат
+Как активировать сертификат через Portal и что проверить перед операцией.
 
-[Открыть раздел](Waiter.md)
+[Открыть инструкцию](Сертификаты/Активация%20сертификатов%20через%20Portal.md)
 </div>
 
-<div class="kb-card" markdown>
-### Виджет
-Встраиваемый виджет продажи билетов для партнёрских сайтов и приложений.
+<div class="kb-task-card" markdown>
+<span class="kb-badge">виджет</span>
+### Понять путь покупки в виджете
+Как покупатель выбирает событие, места, вводит email и оплачивает билет.
 
-[Открыть раздел](Виджет.md)
+[Открыть сценарий](Виджет/Userflow%20покупки%20в%20виджете.md)
 </div>
 
-<div class="kb-card" markdown>
+<div class="kb-task-card" markdown>
+<span class="kb-badge">waiter</span>
+### Обслужить гостей в Waiter
+Работа официанта: столы, гости, блюда, бегунки, предчек и оплата.
+
+[Открыть инструкцию](Waiter/Работа%20официанта%20в%20Waiter.md)
+</div>
+
+<div class="kb-task-card" markdown>
+<span class="kb-badge">киоск</span>
+### Запустить киоск
+Подготовка и запуск киоска, базовые проверки перед работой.
+
+[Открыть инструкцию](Киоск/Запуск%20киоска.md)
+</div>
+
+<div class="kb-task-card" markdown>
+<span class="kb-badge">афиша</span>
+### Настроить порядок событий
+Сортировка афиши и управление отображением событий на витрине.
+
+[Открыть инструкцию](Афиша%20и%20витрина/Сортировка%20афиши.md)
+</div>
+
+</div>
+
+## Разделы базы
+
+<div class="kb-section-grid" markdown>
+
+<div class="kb-section-card" markdown>
+### Билеты и касса
+Продажа билетов, товары, комбо, сертификаты, Seller Web и виджет.
+
+[Перейти](Продажа%20билетов.md)
+</div>
+
+<div class="kb-section-card" markdown>
+### Зал и ресторан
+Инструкции Waiter для официанта, администратора и настройки меню.
+
+[Перейти](Waiter.md)
+</div>
+
+<div class="kb-section-card" markdown>
 ### Киоск
 Запуск и техническая подготовка киоска.
 
-[Открыть раздел](Киоск.md)
+[Перейти](Киоск.md)
 </div>
 
-<div class="kb-card" markdown>
-### Сертификаты
-Активация и работа с сертификатами через Portal.
+<div class="kb-section-card" markdown>
+### Афиша и расписание
+События, витрина, сортировка и отображение афиши.
 
-[Открыть раздел](Сертификаты.md)
+[Перейти](Афиша%20и%20витрина.md)
 </div>
 
-<div class="kb-card" markdown>
-### Афиша и витрина
-Настройки сортировки и отображения событий.
+<div class="kb-section-card" markdown>
+### Настройки и налоги
+Прайсы, НДС и технические настройки.
 
-[Открыть раздел](Афиша%20и%20витрина.md)
+[Перейти](Прайсы%20и%20налоги.md)
 </div>
 
-<div class="kb-card" markdown>
-### Прайсы и налоги
-Прайсы, НДС и связанные операционные инструкции.
+<div class="kb-section-card" markdown>
+### Поддержка
+SupportBot и пользовательские обращения.
 
-[Открыть раздел](Прайсы%20и%20налоги.md)
+[Перейти](SupportBot/Как%20пользоваться%20SupportBot.md)
 </div>
 
 </div>
+
+!!! tip "Как быстрее найти нужное"
+    Используй поиск по обычным словам: `киоск`, `сертификат`, `официант`, `НДС`, `виджет`, `касса`, `билет`, `оплата`, `афиша`.

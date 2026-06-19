@@ -1,6 +1,6 @@
-# Userflow покупки в виджете
+# Путь покупки в виджете
 
-Источник: [YouTube — «Описание userflow в виджете go2.by»](https://www.youtube.com/watch?v=T6239zirZj0)
+Источник: [YouTube — «Путь покупки в виджете»](https://www.youtube.com/watch?v=T6239zirZj0)
 
 ## Суть сценария
 

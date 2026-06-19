@@ -1,24 +1,27 @@
-site_name: CL Maverick KB
-site_description: База знаний CL Maverick — инструкции и документация
+site_name: База знаний Maverick
+site_description: База знаний Maverick — инструкции, сценарии и справка для сотрудников CinemaLab
 site_url: https://ogelslamovuk.github.io/cl_maverick_kb/
-repo_url: https://github.com/ogelslamovuk/cl_maverick_kb
-repo_name: ogelslamovuk/cl_maverick_kb
+
+copyright: © CinemaLab · Maverick Knowledge Base
+
+extra:
+  generator: false
 
 theme:
   name: material
   language: ru
-  logo: assets/brand/maverick_logo_reversed.png
+  logo: assets/brand/maverick_logo.png
   favicon: assets/brand/cinemalab_logo.jpg
   palette:
     - scheme: default
-      primary: black
-      accent: amber
+      primary: white
+      accent: blue
   features:
-    - navigation.tabs
     - navigation.sections
     - navigation.expand
     - navigation.top
     - navigation.indexes
+    - navigation.footer
     - search.suggest
     - search.highlight
     - content.tabs.link
@@ -41,36 +44,38 @@ markdown_extensions:
 extra_css:
   - stylesheets/extra.css
 
+extra_javascript:
+  - javascripts/search-fallback.js
+
 nav:
   - Главная: index.md
-  - Продажа билетов:
+  - Как пользоваться базой: Как пользоваться базой знаний.md
+  - Билеты и касса:
       - Обзор: Продажа билетов.md
-      - Базовая работа в Seller Web: Продажа билетов/Базовая работа в Seller Web.md
-  - Seller:
-      - Обзор: Seller.md
-      - Базовая работа в Seller Web: Seller/Базовая работа в Seller Web.md
-  - Waiter:
-      - Обзор: Waiter.md
+      - Касса Seller Web: Seller.md
+      - Продажа в Seller Web: Продажа билетов/Базовая работа в Seller Web.md
+      - Сертификаты:
+          - Обзор: Сертификаты.md
+          - Активация через Portal: Сертификаты/Активация сертификатов через Portal.md
+      - Виджет:
+          - Обзор: Виджет.md
+          - Принципы работы: Виджет/Принципы работы виджета.md
+          - Путь покупки: Виджет/Userflow покупки в виджете.md
+  - Зал и ресторан:
+      - Обзор Waiter: Waiter.md
       - Работа официанта: Waiter/Работа официанта в Waiter.md
       - Работа администратора: Waiter/Работа администратора в Waiter.md
       - Настройка меню и цехов: Waiter/Настройка меню и цехов в Manager для Waiter.md
-  - Сертификаты:
-      - Обзор: Сертификаты.md
-      - Активация через Portal: Сертификаты/Активация сертификатов через Portal.md
   - Киоск:
       - Обзор: Киоск.md
       - Запуск киоска: Киоск/Запуск киоска.md
-  - Афиша и витрина:
-      - Обзор: Афиша и витрина.md
+  - Афиша и расписание:
+      - Афиша и витрина: Афиша и витрина.md
       - Сортировка афиши: Афиша и витрина/Сортировка афиши.md
-  - Прайсы и налоги:
-      - Обзор: Прайсы и налоги.md
+      - Расписание и события: Расписание и события.md
+  - Настройки и налоги:
+      - Прайсы и НДС: Прайсы и налоги.md
       - Заполнение прайса с НДС: Прайсы и налоги/Заполнение прайса с НДС.md
-  - Расписание и события: Расписание и события.md
-  - Технический setup: Технический setup.md
-  - Виджет:
-      - Обзор: Виджет.md
-      - Принципы работы: Виджет/Принципы работы виджета.md
-      - Userflow покупки: Виджет/Userflow покупки в виджете.md
-  - SupportBot:
-      - Как пользоваться SupportBot: SupportBot/Как пользоваться SupportBot.md
+      - Техническая настройка: Технический setup.md
+  - Поддержка:
+      - SupportBot: SupportBot/Как пользоваться SupportBot.md
