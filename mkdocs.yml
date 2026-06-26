@@ -64,6 +64,11 @@ nav:
           - Путь покупки: Виджет/Userflow покупки в виджете.md
   - Manager / back-office:
       - Обзор: Manager.md
+      - Старт и навигация: Manager/Запуск и навигация в Manager.md
+      - Таблицы, фильтры и выгрузка: Manager/Таблицы фильтры и выгрузка в Manager.md
+      - Продажи в Manager: Manager/Проверка продаж в Manager.md
+      - Пользователи: Manager/Пользователи в Manager.md
+      - Справочники: Manager/Справочники Manager.md
       - Сертификаты в Manager: Manager/Сертификаты в Manager.md
       - Меню и цеха для Waiter: Waiter/Настройка меню и цехов в Manager для Waiter.md
       - Прайсы и НДС: Прайсы и налоги/Заполнение прайса с НДС.md

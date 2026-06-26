@@ -22,6 +22,46 @@ Manager / BackOffice.
 <div class="kb-task-grid" markdown>
 
 <div class="kb-task-card" markdown>
+<span class="kb-badge">старт</span>
+### Найти нужный раздел в Manager
+Меню, быстрый доступ, последние открытые, основные разделы и горячие клавиши.
+
+[Открыть инструкцию](Manager/Запуск%20и%20навигация%20в%20Manager.md)
+</div>
+
+<div class="kb-task-card" markdown>
+<span class="kb-badge">таблицы</span>
+### Работать с таблицами и фильтрами
+Колонки, фильтры, группировка, поиск и выгрузка таблиц.
+
+[Открыть инструкцию](Manager/Таблицы%20фильтры%20и%20выгрузка%20в%20Manager.md)
+</div>
+
+<div class="kb-task-card" markdown>
+<span class="kb-badge">продажи</span>
+### Проверить продажу в Manager
+Операции, статусы, детализация, оплаты, скидки и начисление бонусов.
+
+[Открыть инструкцию](Manager/Проверка%20продаж%20в%20Manager.md)
+</div>
+
+<div class="kb-task-card" markdown>
+<span class="kb-badge">пользователи</span>
+### Найти пользователя в Manager
+Карточка пользователя, статус, категория, кодовый номер, заказы и бонусы.
+
+[Открыть инструкцию](Manager/Пользователи%20в%20Manager.md)
+</div>
+
+<div class="kb-task-card" markdown>
+<span class="kb-badge">справочники</span>
+### Разобраться со справочниками Manager
+Организации, объекты, кассовые зоны, кассы, схемы продаж, товары и списки.
+
+[Открыть инструкцию](Manager/Справочники%20Manager.md)
+</div>
+
+<div class="kb-task-card" markdown>
 <span class="kb-badge">сертификаты</span>
 ### Проверить сертификат в Manager
 Выпуск, остаток, операции, категории, промокоды и списки товаров/комбо.
