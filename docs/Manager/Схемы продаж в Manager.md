@@ -38,7 +38,7 @@
 
 В карточке схемы есть детализация по категориям.
 
-![[media/manager/manager-sales-scheme-details-pub.jpg]]
+![manager sales scheme details pub](../assets/media/manager/manager-sales-scheme-details-pub.jpg)
 
 Если заведена новая категория билета, её нужно привязать к нужной схеме продаж. Иначе категория будет продаваться только там, где она действительно привязана.
 

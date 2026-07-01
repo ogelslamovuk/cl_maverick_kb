@@ -69,7 +69,7 @@
 - баннер;
 - фото и видео, если они заполнены.
 
-![[media/manager/manager-event-site-card-pub.jpg]]
+![manager event site card pub](../assets/media/manager/manager-event-site-card-pub.jpg)
 
 Если поле в карточке события не заполнено, на сайте соответствующая информация может не появиться.
 
