@@ -68,7 +68,17 @@ nav:
       - Таблицы, фильтры и выгрузка: Manager/Таблицы фильтры и выгрузка в Manager.md
       - Продажи в Manager: Manager/Проверка продаж в Manager.md
       - Пользователи: Manager/Пользователи в Manager.md
-      - Справочники: Manager/Справочники Manager.md
+      - Справочники:
+          - Обзор: Manager/Справочники Manager.md
+          - Организации: Manager/Организации в Manager.md
+          - Объекты: Manager/Объекты в Manager.md
+          - Залы: Manager/Залы в Manager.md
+          - Кассовые зоны: Manager/Кассовые зоны в Manager.md
+          - Кассы: Manager/Кассы в Manager.md
+          - События: Manager/События в Manager.md
+          - Схемы продаж: Manager/Схемы продаж в Manager.md
+          - Вспомогательные справочники: Manager/Вспомогательные справочники в Manager.md
+          - Устаревшие справочники комплектации: Manager/Устаревшие справочники комплектации в Manager.md
       - Сертификаты в Manager: Manager/Сертификаты в Manager.md
       - Меню и цеха для Waiter: Waiter/Настройка меню и цехов в Manager для Waiter.md
       - Прайсы и НДС: Прайсы и налоги/Заполнение прайса с НДС.md
