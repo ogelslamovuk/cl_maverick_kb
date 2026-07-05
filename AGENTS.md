@@ -84,3 +84,46 @@ High-risk materials must not be marked `verified` without explicit user confirma
 Do not invent facts. If source data is missing or unclear, create a gap instead.
 
 Use gaps to record missing facts, conflicts, questions, or places where user confirmation is required.
+
+Before any LLM-digestion or wiki-digestion work, Codex must read and follow:
+
+- `docs/WIKI_DIGESTION_RULES.md`
+- `docs/MAVERICK_KB_PROJECT_BRIEF.md`
+- `docs/MAVERICK_KB_TZ.md`
+- `docs/MAVERICK_KB_PROCESS.md`
+- `docs/MAVERICK_KB_AGENT_PROMPT.md`
+- `docs/MAVERICK_KB_CHECKLIST.md`
+
+## Autonomous processing prompt
+
+For autonomous one-message starts, use:
+
+```text
+docs/MAVERICK_KB_INITIAL_MESSAGE.md
+```
+
+If the user starts with that message, it already counts as approval for the full processing cycle. Do not stop after a plan waiting for another `approve`.
+
+## Transcription on this Windows machine
+
+Do not stop just because `whisper` is not in PATH, PowerShell cannot run `whisper`, `OPENAI_API_KEY` is not set, or Python `openai` / `whisper` packages are missing.
+
+Use the local executable directly:
+
+```text
+D:\soft\Whisper\whisper-cli.exe
+```
+
+From Git Bash/MSYS:
+
+```bash
+/d/soft/Whisper/whisper-cli.exe
+```
+
+Models live in:
+
+```text
+D:\soft\Whisper\models\
+```
+
+If full transcription fails, continue with segmented audio, contact sheets, screenshots, partial transcript, and `Maverick_KB/QUESTIONS.md` instead of stopping the entire KB task.
