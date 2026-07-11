@@ -134,6 +134,13 @@ hide:
 </div>
 
 <div class="kb-section-card" markdown>
+### Сайт mooon.by
+Главная страница, навигация и пользовательские сценарии публичного сайта.
+
+[Перейти](Сайт%20mooon.by.md)
+</div>
+
+<div class="kb-section-card" markdown>
 ### Настройки и налоги
 Прайсы, НДС и технические настройки.
 
