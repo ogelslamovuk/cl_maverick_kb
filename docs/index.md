@@ -9,7 +9,7 @@ hide:
     <span>CinemaLab · Maverick</span>
   </div>
   <h1>База знаний Maverick</h1>
-  <p class="kb-home-lead">Быстрый вход в рабочие инструкции: Manager/back-office, касса, виджет, Waiter, киоск, сертификаты, афиша и настройки.</p>
+  <p class="kb-home-lead">Быстрый вход в рабочие инструкции: Portal, Manager/back-office, касса, виджет, Waiter, киоск, сертификаты, афиша и настройки.</p>
   <div class="kb-home-actions">
     <a href="Как%20пользоваться%20базой%20знаний/" class="kb-button kb-button--primary">Как искать инструкцию</a>
     <a href="#popular" class="kb-button">Популярные задачи</a>
@@ -19,6 +19,14 @@ hide:
 ## Мне нужно… {#popular}
 
 <div class="kb-task-grid" markdown>
+
+<div class="kb-task-card" markdown>
+<span class="kb-badge">portal</span>
+### Найти функцию в Portal
+Внутренний веб-портал: аналитика, бонусы, новости, поиск, каталог, отчёты, киоск и сертификаты.
+
+[Открыть раздел](Портал.md)
+</div>
 
 <div class="kb-task-card" markdown>
 <span class="kb-badge">manager</span>
@@ -104,6 +112,13 @@ hide:
 
 [Перейти](Продажа%20билетов.md)
 </div>
+<div class="kb-section-card" markdown>
+### Портал
+Веб-админка `portal.mooon.by`: аналитика, бонусы, новости, роли, поиск, каталог, отчёты и служебные операции.
+
+[Перейти](Портал.md)
+</div>
+
 
 <div class="kb-section-card" markdown>
 ### Manager / back-office
@@ -157,4 +172,4 @@ SupportBot и пользовательские обращения.
 </div>
 
 !!! tip "Как быстрее найти нужное"
-    Используй поиск по обычным словам: `Manager`, `продажа`, `пользователь`, `киоск`, `сертификат`, `официант`, `НДС`, `виджет`, `касса`, `билет`, `оплата`, `афиша`.
+    Используй поиск по обычным словам: `Portal`, `Manager`, `продажа`, `пользователь`, `киоск`, `сертификат`, `официант`, `НДС`, `виджет`, `касса`, `билет`, `оплата`, `афиша`.
