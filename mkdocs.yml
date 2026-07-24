@@ -70,6 +70,11 @@ nav:
       - Таблицы, фильтры и выгрузка: Manager/Таблицы фильтры и выгрузка в Manager.md
       - Продажи в Manager: Manager/Проверка продаж в Manager.md
       - Пользователи: Manager/Пользователи в Manager.md
+      - Настройки в Manager:
+          - Обзор: Manager/Настройки в Manager.md
+          - Роли и права: Manager/Роли и права пользователей в Manager.md
+          - Баннеры сайта: Manager/Баннеры сайта и пользовательские страницы в Manager.md
+          - HTML-шаблоны писем: Manager/HTML-шаблоны писем с билетами в Manager.md
       - Программы лояльности: Manager/Программы лояльности в Manager.md
       - Справочники:
           - Обзор: Manager/Справочники Manager.md
