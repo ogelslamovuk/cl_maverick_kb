@@ -1,10 +1,19 @@
 .venv/
+.venv_*/
+models/
 __pycache__/
 *.pyc
 site/
 .env
 .DS_Store
 Thumbs.db
+tmp_*.json
+
+# Internal KB process docs must stay local-only.
+docs/Gaps.md
+docs/GAPS.md
+docs/MAVERICK_KB_*.md
+docs/WIKI_DIGESTION_RULES.md
 
 inbox/*
 !inbox/README.md

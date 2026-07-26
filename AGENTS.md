@@ -14,7 +14,7 @@ Do not change the project structure without an explicit user command.
 
 `Maverick_KB/raw_normalized/` is generated locally from inbox materials and must not be committed to GitHub.
 
-GitHub currently stores only the project scaffold, scripts placeholders, documentation, and repository rules:
+GitHub currently stores only the project scaffold, scripts placeholders, public documentation, and repository rules:
 
 - `README.md`
 - `AGENTS.md`
@@ -23,6 +23,14 @@ GitHub currently stores only the project scaffold, scripts placeholders, documen
 - `inbox/README.md`
 - `exports/README.md`
 - `.gitignore`
+
+## Publication Boundary
+
+Internal KB process materials may exist locally in Obsidian, but must never be committed to GitHub or published to the user-facing GitHub Pages site, frontend navigation, direct public URLs, or search index.
+
+Internal materials include agent prompts, initial messages, digestion rules, project briefs, technical assignments, processing procedures, readiness checklists, gaps/open questions, raw transcripts, source-processing notes, and any file whose purpose is to instruct Codex/LLM/agents rather than Maverick end users.
+
+Store internal process documents under local-only Obsidian paths such as `Maverick_KB/internal/`. When updating Pages, explicitly exclude internal materials from MkDocs with `exclude_docs`, keep them out of `nav`, and verify the built `site/` and `site/search/search_index.json` do not contain them.
 
 ## Navigation Model
 
@@ -87,19 +95,19 @@ Use gaps to record missing facts, conflicts, questions, or places where user con
 
 Before any LLM-digestion or wiki-digestion work, Codex must read and follow:
 
-- `docs/WIKI_DIGESTION_RULES.md`
-- `docs/MAVERICK_KB_PROJECT_BRIEF.md`
-- `docs/MAVERICK_KB_TZ.md`
-- `docs/MAVERICK_KB_PROCESS.md`
-- `docs/MAVERICK_KB_AGENT_PROMPT.md`
-- `docs/MAVERICK_KB_CHECKLIST.md`
+- `Maverick_KB/internal/WIKI_DIGESTION_RULES.md`
+- `Maverick_KB/internal/MAVERICK_KB_PROJECT_BRIEF.md`
+- `Maverick_KB/internal/MAVERICK_KB_TZ.md`
+- `Maverick_KB/internal/MAVERICK_KB_PROCESS.md`
+- `Maverick_KB/internal/MAVERICK_KB_AGENT_PROMPT.md`
+- `Maverick_KB/internal/MAVERICK_KB_CHECKLIST.md`
 
 ## Autonomous processing prompt
 
 For autonomous one-message starts, use:
 
 ```text
-docs/MAVERICK_KB_INITIAL_MESSAGE.md
+Maverick_KB/internal/MAVERICK_KB_INITIAL_MESSAGE.md
 ```
 
 If the user starts with that message, it already counts as approval for the full processing cycle. Do not stop after a plan waiting for another `approve`.
