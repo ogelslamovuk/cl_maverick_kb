@@ -28,7 +28,7 @@ GitHub currently stores only the project scaffold, scripts placeholders, public 
 
 Internal KB process materials may exist locally in Obsidian, but must never be committed to GitHub or published to the user-facing GitHub Pages site, frontend navigation, direct public URLs, or search index.
 
-Internal materials include agent prompts, initial messages, digestion rules, project briefs, technical assignments, processing procedures, readiness checklists, gaps/open questions, raw transcripts, source-processing notes, and any file whose purpose is to instruct Codex/LLM/agents rather than Maverick end users.
+Internal materials include agent prompts, initial messages, digestion rules, project briefs, technical assignments, processing procedures, readiness checklists, raw transcripts, source-processing notes, and any file whose purpose is to instruct Codex/LLM/agents rather than Maverick end users.
 
 Store internal process documents under local-only Obsidian paths such as `Maverick_KB/internal/`. When updating Pages, explicitly exclude internal materials from MkDocs with `exclude_docs`, keep them out of `nav`, and verify the built `site/` and `site/search/search_index.json` do not contain them.
 

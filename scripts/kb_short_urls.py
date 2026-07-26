@@ -84,6 +84,8 @@ _PAGE_SLUGS = {
     "troubleshooting.md": "troubleshooting",
     "products.md": "products",
     "glossary.md": "glossary",
+    "review-gaps.md": "review/gaps",
+    "review-questions.md": "review/questions",
 }
 
 _TASK_SLUGS = {
@@ -178,6 +180,12 @@ class ShortUrlsPlugin(BasePlugin):
             )
             html_content = html_content.replace(meta, meta + warning, 1)
         return html_content
+
+    def on_post_page(self, output, page, config):
+        if page.file.src_uri in {"review-gaps.md", "review-questions.md"}:
+            robots = '<meta name="robots" content="noindex,nofollow,noarchive">'
+            output = output.replace("</head>", f"  {robots}\n  </head>", 1)
+        return output
 
     def on_post_build(self, config):
         base_url = str(config.site_url or "/")
