@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cl-maverick-kb-tools"
+version = "1.0.0"
+description = "Local MkDocs extensions for Maverick KB"
+requires-python = ">=3.11"
+dependencies = ["mkdocs>=1.6"]
+
+[project.entry-points."mkdocs.plugins"]
+kb-short-urls = "scripts.kb_short_urls:ShortUrlsPlugin"
+
+[tool.setuptools]
+packages = ["scripts"]

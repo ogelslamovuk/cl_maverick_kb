@@ -24,6 +24,37 @@
       .trim();
   }
 
+  var synonymGroups = [
+    ['чек', 'продажа', 'заказ', 'операция'],
+    ['вернуть', 'возврат', 'отмена'],
+    ['касса', 'seller', 'кассир'],
+    ['терминал', 'киоск', 'самообслуживание'],
+    ['сертификат', 'подарочная карта', 'абонемент'],
+    ['расписание', 'сеанс', 'планировщик'],
+    ['афиша', 'витрина', 'событие'],
+    ['права', 'роль', 'доступ', 'разрешение'],
+    ['отчет', 'отчёт', 'аналитика', 'выгрузка'],
+    ['официант', 'waiter', 'стол', 'предчек'],
+    ['цена', 'прайс', 'ндс', 'налог'],
+    ['виджет', 'go2', 'партнер', 'партнёр']
+  ];
+
+  function expandTokens(tokens) {
+    var expanded = tokens.slice();
+    synonymGroups.forEach(function (group) {
+      var normalizedGroup = group.map(normalize);
+      var matched = tokens.some(function (token) {
+        return normalizedGroup.some(function (term) {
+          return term.indexOf(token) >= 0 || token.indexOf(term) >= 0;
+        });
+      });
+      if (matched) expanded = expanded.concat(normalizedGroup);
+    });
+    return expanded.filter(function (token, index, all) {
+      return token && all.indexOf(token) === index;
+    });
+  }
+
   function escapeHtml(value) {
     return String(value || '').replace(/[&<>"']/g, function (ch) {
       return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[ch];
@@ -75,7 +106,7 @@
       meta.textContent = 'Начните печатать для поиска';
       return;
     }
-    var tokens = q.split(' ').filter(Boolean);
+    var tokens = expandTokens(q.split(' ').filter(Boolean));
     var matches = docs
       .map(function (doc) { return { doc: doc, score: score(doc, tokens) }; })
       .filter(function (item) { return item.score > 0; })
@@ -93,9 +124,14 @@
       var href = new URL(doc.location || '.', baseUrl).href;
       var li = document.createElement('li');
       li.className = 'md-search-result__item';
+      var context = decodeURIComponent(doc.location || '')
+        .split('/')
+        .filter(Boolean)[0] || 'База знаний';
+      if (context.charAt(0) === '#') context = 'База знаний';
       li.innerHTML =
         '<a class="md-search-result__link" href="' + escapeHtml(href) + '">' +
           '<article class="md-search-result__article md-typeset">' +
+            '<span class="kb-search-context">' + escapeHtml(context) + '</span>' +
             '<h1>' + escapeHtml(doc.title || doc.location || 'Страница') + '</h1>' +
             '<p>' + escapeHtml(excerpt(doc.text || '', tokens[0])) + '</p>' +
           '</article>' +

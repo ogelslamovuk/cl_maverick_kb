@@ -27,9 +27,10 @@ jobs:
       - name: Install dependencies
         run: |
           pip install mkdocs-material mkdocs
+          pip install -e .
 
       - name: Build site
-        run: mkdocs build
+        run: mkdocs build --strict
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
