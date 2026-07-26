@@ -9,7 +9,7 @@ hide:
     <span>CinemaLab · Maverick</span>
   </div>
   <h1>База знаний Maverick</h1>
-  <p class="kb-home-lead">Быстрый вход в рабочие инструкции: Portal, Manager/back-office, касса, виджет, Waiter, киоск, сертификаты, афиша и настройки.</p>
+  <p class="kb-home-lead">Быстрый вход в рабочие инструкции: Seller, Manager, Portal, Waiter, киоск, сертификаты, сайт, виджет, афиша и настройки.</p>
   <div class="kb-home-actions">
     <a href="Как%20пользоваться%20базой%20знаний/" class="kb-button kb-button--primary">Как искать инструкцию</a>
     <a href="#popular" class="kb-button">Популярные задачи</a>
@@ -46,7 +46,7 @@ hide:
 
 <div class="kb-task-card" markdown>
 <span class="kb-badge">касса</span>
-### Продать билет или товар
+### Продать билет или товар в Seller
 Базовый сценарий работы в Seller Web: выбор события, мест, товаров, оплата и чек.
 
 [Открыть инструкцию](Продажа%20билетов/Базовая%20работа%20в%20Seller%20Web.md)
@@ -94,8 +94,8 @@ hide:
 
 <div class="kb-task-card" markdown>
 <span class="kb-badge">афиша</span>
-### Настроить порядок событий
-Сортировка афиши и управление отображением событий на витрине.
+### Проверить порядок событий на mooon.by
+Фильтры, порядок карточек, календарь и кнопка `Купить билет` в афише сайта.
 
 [Открыть инструкцию](Афиша%20и%20витрина/Сортировка%20афиши.md)
 </div>
@@ -107,13 +107,13 @@ hide:
 <div class="kb-section-grid" markdown>
 
 <div class="kb-section-card" markdown>
-### Билеты и касса
-Продажа билетов, товары, комбо, сертификаты, Seller Web и виджет.
+### Seller
+Касса Seller Web: продажа билетов, товаров, комбо, сертификатов, оплата, чек и возвраты.
 
-[Перейти](Продажа%20билетов.md)
+[Перейти](Seller.md)
 </div>
 <div class="kb-section-card" markdown>
-### Портал
+### Portal
 Веб-админка `portal.mooon.by`: аналитика, бонусы, новости, роли, поиск, каталог, отчёты и служебные операции.
 
 [Перейти](Портал.md)
@@ -121,17 +121,24 @@ hide:
 
 
 <div class="kb-section-card" markdown>
-### Manager / back-office
+### Manager
 Справочники, категории, списки, сертификаты, прайсы и настройки, которые влияют на кассу, сайт и Waiter.
 
 [Перейти](Manager.md)
 </div>
 
 <div class="kb-section-card" markdown>
-### Зал и ресторан
+### Waiter
 Инструкции Waiter для официанта, администратора и настройки меню.
 
 [Перейти](Waiter.md)
+</div>
+
+<div class="kb-section-card" markdown>
+### Сертификаты
+Проверка проблем, выпуск, активация через Portal и настройки в Manager.
+
+[Перейти](Сертификаты.md)
 </div>
 
 <div class="kb-section-card" markdown>
@@ -143,7 +150,7 @@ hide:
 
 <div class="kb-section-card" markdown>
 ### Афиша и расписание
-События, витрина, сортировка и отображение афиши.
+Порядок показа событий на `mooon.by`, связь с расписанием сеансов и календарём.
 
 [Перейти](Афиша%20и%20витрина.md)
 </div>
@@ -153,6 +160,13 @@ hide:
 Главная страница, навигация и пользовательские сценарии публичного сайта.
 
 [Перейти](Сайт%20mooon.by.md)
+</div>
+
+<div class="kb-section-card" markdown>
+### Виджет
+Сценарий покупки билета через виджет и принципы его работы.
+
+[Перейти](Виджет.md)
 </div>
 
 <div class="kb-section-card" markdown>
