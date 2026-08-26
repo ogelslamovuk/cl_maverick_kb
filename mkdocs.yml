@@ -46,8 +46,7 @@ exclude_docs: |
   /WIKI_DIGESTION_RULES.md
 
 markdown_extensions:
-  - toc:
-      permalink: true
+  - toc
   - tables
   - fenced_code
   - admonition
