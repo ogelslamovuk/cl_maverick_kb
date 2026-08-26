@@ -3,6 +3,7 @@
 models/
 __pycache__/
 *.pyc
+*.egg-info/
 site/
 .env
 .DS_Store

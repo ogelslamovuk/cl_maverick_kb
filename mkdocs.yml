@@ -11,6 +11,7 @@ extra:
 
 theme:
   name: material
+  custom_dir: overrides
   language: ru
   logo: assets/brand/maverick_logo.png
   favicon: assets/brand/cinemalab_logo.jpg
